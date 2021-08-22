@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  
+}
+
+header {
+  background-color: rgb(70, 92, 70);
+  
+}
+
+header,
+section,
+footer
+ {
+  padding: 3rem;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(9, 54, 9);
+}
+
+header,
+footer {
+  color: white;
+}
+
+@media (min-width: 648px) {
+    
+
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 3.5rem;
+  }
+
+  section {
+    padding: 5rem;
+  }
+
+
+  .flex {
+    display: flex;
+    
+  }
+
+  .column {
+    /* border: 1px white solid; */
+    flex-basis: 100%;
+  }
+
+  .flex > * + * {
+    margin-left: 1rem;
+  }
+}
